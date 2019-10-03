@@ -1,5 +1,7 @@
 # Évaluation NodeJS
 
+La plupart des choses fonctionnent avec PostMan, Malheureusement, je n'ai pas tout compris sur les relations entre le JS et les pages html ...
+
 ###### Point Positif
 
 - Compréhension pour afficher les données sur une page web
