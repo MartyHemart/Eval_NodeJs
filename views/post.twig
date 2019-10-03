@@ -1,0 +1,25 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+<h1>{{title}}</h1>
+<h1>Les contacts</h1>
+<a href="/">Retour</a> <br>
+<a href="/">Ajoutez un contact</a>
+<p> -------------------- </p>
+<!-- Les  contacts -->
+{% for result in results %}
+<img src="{{ result.avatar }}">
+<p>{{ result.nom }}</p>
+<p>{{ result.prenom }}</p>
+<p>{{ result.description }}</p>
+<p>{{ result.tel }}</p>
+<p>{{ result.email }}</p>
+
+<a href="/users/{{ result._id }}">Voir</a>
+<a href="/users/{{ result._id }}">Update</a>
+<a href="/users/{{ result._id }}">Suppression</a>
+<p> ---------------- </p>
+{% endfor %}
+</p>
+
+{% endblock %}
